@@ -1,0 +1,8 @@
+.textGradient {
+    background: linear-gradient(to right, #6ee7b7, #3b82f6); /* 从左到右的渐变，您可以自定义颜色 */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 88px;
+    font-weight: bold;
+  }
