@@ -23,7 +23,7 @@ import { NumberButton } from "./NumberButton";
 import { PaymentDetailsPreview } from "./PaymentDetailsPreview";
 import ResourcePriceCalculator from "@/utils/ResourcePriceCalculator";
 
-const amounts = [32000, 100000, 1000000, 10000000];
+const amounts = [33000, 100000, 1000000, 10000000];
 const durations = [
   { title: "1小时", duration: 3600000 },
   { title: "3小时", duration: 10800000 },
@@ -259,7 +259,7 @@ export function RentalForm() {
           </Popover>
         </div>
       </div>
-      {amount && duration && (
+      {amount != undefined && duration != undefined && (
         <div className="flex flex-col items-start justify-center w-full px-4 space-y-1">
           <Title heading={6}>支付详情</Title>
           <PaymentDetailsPreview></PaymentDetailsPreview>
